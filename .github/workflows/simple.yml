@@ -34,7 +34,25 @@ jobs:
   run-ls-command:
     runs-on: ubuntu-latest
     steps:
-      - name: java version
+      - name: ls
+        run: ls
+  lav-dir-og-filer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ls
+        run: ls
+      - name: mkdir mappe
+        run: mkdir mappe
+      - name: cd mappe
+        run: cd mappe
+      - name: touch fil.txt
+        run: touch fil.txt
+      - name: ls
+        run: ls
+      - name: cd ..
+        run: cd ..
+      - name: ls
         run: ls
   #check koden ud på byggeserveren. den har alt muligt. det er prælavet med et yml script
   #hvordan man checker alt ud på byggeserverem
+  #de avancerede github actions tager vi fra azure
