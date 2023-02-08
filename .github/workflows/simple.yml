@@ -1,0 +1,15 @@
+name: my first action
+
+on: [push] #når noget kode pushes sker det her automatisk. Kan også være on: pull request
+#man bruger ofte on: til at automatisere deployment men kan også fx sende emails til teamet
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest #skal køre på latest ubuntu i githubs virtuelle maskine(?)
+    steps:
+      -name:echo a string
+      run:echo "Hello world"
+      -name:multiline script
+      run:|
+        node -v
+        npm -v

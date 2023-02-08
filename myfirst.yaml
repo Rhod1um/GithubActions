@@ -1,0 +1,48 @@
+name: Nanna
+age: 28
+address: "myway num1"
+active: true
+notact: false
+
+key:
+  key1: value1
+  key2: value2
+  #objekt^
+somejson: {key: value, key2: value2}
+
+jobarray: #array i yaml
+  - item1
+  - item2
+  - item3
+
+jobarrayobj:
+  - item1
+  - item2
+  - {name: Lene, age: 25} #objekt i array
+
+objectarray: #objekter i array, array af objekter
+  - key: value
+  - key2: 17
+
+objectarray2: #array af to objekter. bindestreg er start på objekt, key2 tilhøre objektet. to forskellige objekter
+  - key:value
+    key2:value
+  - key:value
+    key2:value
+
+longText: >
+  ghjkj guihiojp huji
+  hjkjlk bnljko bkjlnk
+
+longText2: | #(lodret streg, som OR i java her)
+  vgjcghvjbk gvhjbkn
+  vgjhbkjnl yhjkl
+
+#lav hello world som afvikles i skyen i github actions
+#lav folder i roden .github -> folder workflows -> filnavn.yml
+# yaml og yml er åbenbart det samme
+
+#man kan også skrive json i yaml. Man kan konvertere den ene og den anden vej.
+#fx på sider på nettet
+
+#yaml er som json men simplere, key/value pair
