@@ -43,8 +43,8 @@ jobs:
         run: ls
       - name: mkdir mappe
         run: mkdir mappe
-      - name: cd mappe
-        run: cd mappe
+      - name: cd /mappe
+        run: cd /mappe
       - name: pwd
         run: pwd
       - name: ls
