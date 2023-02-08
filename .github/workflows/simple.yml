@@ -24,5 +24,10 @@ jobs:
       - name: Directory Powershell
         run: Get-Location
       - name: Directory Bash #vi vil dog have en bash terminal
-        run: pwd
+        run: pwd #man kan også oprette mapper og filer
         shell: bash
+  run-javaVersion-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: java version
+        run: javac -v
