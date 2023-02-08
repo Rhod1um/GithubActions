@@ -7,9 +7,9 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest #skal køre på latest ubuntu i githubs virtuelle maskine(?)
     steps:
-      -name:echo a string
-      run:echo "Hello world"
-      -name:multiline script
-      run:|
-        node -v
-        npm -v
+      - name: echo a string
+        run: echo "Hello world"
+      - name: multiline script
+        run: |
+          node -v
+          npm -v
