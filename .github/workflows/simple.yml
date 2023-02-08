@@ -13,3 +13,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python command
+        run: | #import platform er en python kommando. | er til at skrive flere linjer. shell er en shell der skal kunne forstå python
+          import platform
+          print(platform.processor())
+        shell: python
