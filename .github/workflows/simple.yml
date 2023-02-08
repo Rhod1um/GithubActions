@@ -14,7 +14,15 @@ jobs:
           node -v
           npm -v
       - name: python command
-        run: | #import platform er en python kommando. | er til at skrive flere linjer. shell er en shell der skal kunne forstå python
+        run: | #import platform er en python kommando. | er til at skrive flere linjer. shell er en shell der skal kunne forstå python. print platform processor viser hvilken processor arkitektur vi køre på (i skyen?). man kan også finde ud af hvilken java compiler osv er installeret
           import platform
           print(platform.processor())
         shell: python
+  run-windows-commands: #nyt job
+    runs-on: windows-latest #køre på windos vm. Så default terminal er powershell
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash #vi vil dog have en bash terminal
+        run: pwd
+        shell: bash
