@@ -31,3 +31,10 @@ jobs:
     steps:
       - name: java version
         run: javac --version
+  run-ls-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: java version
+        run: ls
+  #check koden ud på byggeserveren. den har alt muligt. det er prælavet med et yml script
+  #hvordan man checker alt ud på byggeserverem
