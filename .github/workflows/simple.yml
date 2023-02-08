@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: java version
-        run: javac -v
+        run: javac --version
