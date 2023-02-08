@@ -1,4 +1,4 @@
-name: my first action
+name: my first action2
 
 on: [push] #når noget kode pushes sker det her automatisk. Kan også være on: pull request
 #man bruger ofte on: til at automatisere deployment men kan også fx sende emails til teamet
@@ -43,8 +43,8 @@ jobs:
         run: ls
       - name: mkdir mappe
         run: mkdir mappe
-      - name: cd /mappe
-        run: cd /mappe
+      - name: cd ${pwd}/mappe
+        run: cd ${pwd}/mappe
       - name: pwd
         run: pwd
       - name: ls
