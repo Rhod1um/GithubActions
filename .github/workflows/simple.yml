@@ -45,6 +45,8 @@ jobs:
         run: mkdir mappe
       - name: cd mappe
         run: cd mappe
+      - name: ls
+        run: ls
       - name: touch fil.txt
         run: touch fil.txt
       - name: ls
@@ -56,3 +58,6 @@ jobs:
   #check koden ud på byggeserveren. den har alt muligt. det er prælavet med et yml script
   #hvordan man checker alt ud på byggeserverem
   #de avancerede github actions tager vi fra azure
+
+  #infrastructure as code IaC er at lave filer som computere forstår, hvor man gør et eller andet
+  #fx github actions
